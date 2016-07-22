@@ -1,27 +1,56 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.o">
-      <title>JS QUIZER GAME</title>
-        <link rel="stylesheet" href="main.css" type="text/css/">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Algorithm Quiz Game</title>
+    <link rel="stylesheet" href="styles/main.css">
   </head>
+
   <body>
-    <h1>JS QUIZER GAME</h1>
-    <div class="container" style="max-width: 100%">
-      <div class="row">
-      <div id="sidebar-left" style="max-width: 10%">
+
+<div class="flex-container">
+
+  <div id="flex-main"  class="flex-item">
+      <div id="timer">
+  <h2> Predict the output of the following code:</h2>
+        <h1> 2:00</h1></div><!-- end timer -->
+          <hr />
+
+
+
+
+    <div id="question">
+<pre>
+var x = 1;
+
+for(var i = 0; i < 3; i++)
+{
+  x = x + 1;
+}
+
+console.log(x);
+</pre>
+      <div id="answer">
+        <input type="text" id="ans" placeholder="Your answer"> <input type="submit" id="submit" value="SUBMIT" name="submit">
       </div>
-      <div id="questioner" style="max-width: 60%">
-      </div>
-      <div id="answer" style="max-width: 60%">
-      </div>
-      <div id="sidebar-right" style="max-width: 10%">
-        <p>ajsdhfahdfuhavhlansvfavafh</p>
-      </div>
-      </div>
-      <div id="footer" style="max-width: 100%">
-        <p>copyright &copy2016 JS Quizer Game by: <strong>MRLTV</strong></p>
-      </div>
-    </div>
+    </div> <!-- end question -->
+
+  </div> <!-- end flex-main -->
+
+  <div id="flex-notepad" class="flex-item">
+    <h1> Notepad </h1>
+    <div id="textbox">
+      <input id="pad"/>
+    </div> <!-- end textbox -->
+  </div> <!-- end flex-notepad -->
+
+</div><!-- end flex-container -->
+<footer>
+ <ul>
+   <li><a href="#"> About </a></li>
+   <li><a href="#"> Credit </a></li>
+  </ul>
+</footer>
+
   </body>
 </html>
